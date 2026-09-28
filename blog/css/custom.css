@@ -50,3 +50,15 @@ html body #header-post #toc,
 html body #header-post #menu > br {
   display: none !important;
 }
+
+html body #header #nav ul,
+html body #header-post #nav ul {
+  flex-wrap: nowrap !important;
+  gap: 0.6rem;
+}
+
+html body #header #nav a,
+html body #header-post #nav a {
+  white-space: nowrap;
+  font-size: 0.9em;
+}
