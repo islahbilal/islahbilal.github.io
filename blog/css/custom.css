@@ -62,3 +62,31 @@ html body #header-post #nav a {
   white-space: nowrap;
   font-size: 0.9em;
 }
+
+html body #header #nav ul,
+html body #header-post #nav ul {
+  display: flex !important;
+  flex-flow: row nowrap !important;
+  align-items: center;
+  gap: 0.4rem !important;
+  width: auto !important;
+}
+
+html body #header #nav ul li:not(.icon),
+html body #header-post #nav ul li {
+  display: inline-block !important;
+  flex: 0 0 auto !important;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  float: none !important;
+}
+
+html body #header #nav a,
+html body #header-post #nav a {
+  display: inline-block !important;
+  width: auto !important;
+  padding: 0.2rem !important;
+  white-space: nowrap !important;
+  font-size: 0.85em;
+}
