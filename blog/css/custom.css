@@ -2,3 +2,53 @@
   margin: 0 auto;
   max-width: none;
 }
+
+@media (max-width: 768px) {
+  /* Homepage */
+  #header #nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  #header #nav ul li {
+    display: block !important;
+    margin: 0 !important;
+  }
+
+  #header #nav ul li.icon {
+    display: none !important;
+  }
+
+  /* Individual post pages */
+  #header-post #menu-icon,
+  #header-post #menu-icon-tablet {
+    display: none !important;
+  }
+
+  #header-post > #menu {
+    display: block !important;
+  }
+
+  #header-post #nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  #header-post #nav li {
+    margin: 0 !important;
+  }
+
+  /* Keep the post tools collapsed */
+  #header-post #actions,
+  #header-post #share,
+  #header-post #toc,
+  #header-post #menu > br {
+    display: none !important;
+  }
+}
