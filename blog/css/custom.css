@@ -3,39 +3,50 @@
   max-width: none;
 }
 
-/* Never show hamburger buttons */
-#header #nav ul li.icon,
-#header-post #menu-icon,
-#header-post #menu-icon-tablet {
+/* Remove every Cactus hamburger variant */
+html body #header li.icon,
+html body #header-post > a#menu-icon,
+html body #header-post > a#menu-icon-tablet,
+html body .fa-bars {
   display: none !important;
 }
 
-/* Always show the main navigation */
-#header #nav ul,
-#header-post #nav ul {
+/* Homepage navigation */
+html body #header #nav ul {
   display: flex !important;
   flex-wrap: wrap;
-  align-items: center;
   gap: 0.8rem;
   margin: 0;
   padding: 0;
 }
 
-#header #nav ul li,
-#header-post #nav ul li {
+html body #header #nav ul li:not(.icon) {
   display: block !important;
   margin: 0 !important;
 }
 
-/* Make post-page navigation visible */
-#header-post > #menu {
+/* Post-page navigation */
+html body #header-post > span#menu {
   display: block !important;
 }
 
-/* Hide the extra drawer contents */
-#header-post #actions,
-#header-post #share,
-#header-post #toc,
-#header-post #menu > br {
+html body #header-post #nav ul {
+  display: flex !important;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin: 0;
+  padding: 0;
+}
+
+html body #header-post #nav ul li {
+  display: block !important;
+  margin: 0 !important;
+}
+
+/* Do not expand the other hamburger-drawer content */
+html body #header-post #actions,
+html body #header-post #share,
+html body #header-post #toc,
+html body #header-post #menu > br {
   display: none !important;
 }
